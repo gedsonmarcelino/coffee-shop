@@ -6,8 +6,8 @@ import { Api } from '../../services/Api';
 export function HomeScreen({ navigation }) {
 
   async function fetchData() {
-    const data = await Api.get('/movies')
-    console.log('data', data)
+    console.log('drinks', await Api.get('/drinks'))
+    console.log('drink:1', await Api.get('/drinks/1'))
   }
 
   useEffect(() => {
