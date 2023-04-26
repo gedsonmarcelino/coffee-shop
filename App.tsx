@@ -4,6 +4,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { ViewScreen } from "./src/screens/View";
 
+import './test/miragejs';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
