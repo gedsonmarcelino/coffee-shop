@@ -1,13 +1,15 @@
-import { Button, Text } from 'react-native';
 import { Container } from '../../components/styled';
 import { useEffect } from 'react';
 import { Api } from '../../services/Api';
+import { Header } from '../../components/Header';
+import { Searcher } from '../../components/Searcher';
+import { Card } from '../../components/Card';
+import { CardList } from './styles';
 
 export function HomeScreen({ navigation }) {
 
   async function fetchData() {
     console.log('drinks', await Api.get('/drinks'))
-    console.log('drink:1', await Api.get('/drinks/1'))
   }
 
   useEffect(() => {
@@ -16,8 +18,17 @@ export function HomeScreen({ navigation }) {
 
   return (
     <Container>
-      <Text>Home Screen</Text>
-      <Button onPress={() => navigation.navigate('View')} title='Show' />
-    </Container>
+      <Header />
+      <Searcher />
+
+      <CardList>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </CardList>
+      {/* <Button onPress={() => navigation.navigate('View')} title='Show' /> */}
+    </Container >
   );
 }
