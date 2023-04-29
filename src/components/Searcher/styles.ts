@@ -10,6 +10,7 @@ export const SearchContent = styled.View`
 export const SearchInput = styled.TextInput.attrs((props) => ({
   placeholderTextColor: props.theme.colors.secondaryDark,
 }))`
+  color: ${(props) => props.theme.colors.secondaryDark};
   font-family: ${(props) => props.theme.fonts.regular};
   background-color: ${(props) => props.theme.colors.primaryDark};
   width: 100%;

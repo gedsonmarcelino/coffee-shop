@@ -1,18 +1,18 @@
 import React from 'react';
 import { CardContainer, CardImage, CardImageButton, CardPrice, CardPriceButton, CardPriceIcon, CardPriceText, CardTitle } from './styles';
-import Image1 from '../../assets/images/image-1.png';
-import IconAdd from '../../assets/images/icon-add.png';
+import Image from '../Image'
+import Icon from '../Icon'
 
-export function Card({ navigation }) {
+export function Card({ navigation, data }) {
   return (<CardContainer>
-    <CardImageButton onPress={() => navigation.navigate('View')}>
-      <CardImage source={Image1} />
+    <CardImageButton onPress={() => navigation.navigate('View', { ...data })}>
+      <CardImage source={Image[data.image].uri} />
     </CardImageButton>
-    <CardTitle >Cinnamon & Cocoa</CardTitle>
+    <CardTitle >{data.title}</CardTitle>
     <CardPrice>
-      <CardPriceText>$99</CardPriceText>
+      <CardPriceText>{data.price}</CardPriceText>
       <CardPriceButton>
-        <CardPriceIcon source={IconAdd} />
+        <CardPriceIcon source={Icon['icon-add'].uri} />
       </CardPriceButton>
     </CardPrice>
   </CardContainer>);

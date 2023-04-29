@@ -6,6 +6,7 @@ export default [
     description:
       "Proident reprehenderit exercitation consequat adipisicing amet ex excepteur id in.",
     price: 99,
+    image: "image-1",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export default [
     description:
       "Tempor consectetur reprehenderit sit nostrud aliqua ullamco incididunt et veniam aliquip.",
     price: 199,
+    image: "image-2",
   },
   {
     id: 3,
@@ -21,5 +23,6 @@ export default [
     title: "Bursting Blueberry",
     description: "Anim id minim veniam consectetur.",
     price: 249,
+    image: "image-3",
   },
 ];

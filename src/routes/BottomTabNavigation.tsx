@@ -14,7 +14,7 @@ export function BottomTabNavigation() {
       }}
       tabBar={props => <TabBar {...props} />}
     >
-      <Tab.Screen name="Home" component={ListScreen} />
+      <Tab.Screen name='List' component={ListScreen} />
       <Tab.Screen name="Cart" component={CartScreen} />
     </Tab.Navigator>
   )

@@ -1,28 +1,37 @@
 import { Container } from '../../components/styled';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Api } from '../../services/Api';
 import { Header } from '../../components/Header';
 import { Searcher } from '../../components/Searcher';
 import { Card } from '../../components/Card';
 import { CardList } from './styles';
+import { Text } from 'react-native';
 
 export function ListScreen({ navigation }) {
 
+  const [drinks, setDrinks] = useState([]);
+  const [value, setValue] = useState('');
+
+  const drinksFiltered = drinks.filter(item => item.title.toLowerCase().includes(value.toLowerCase()))
+
   async function fetchData() {
-    console.log('drinks', await Api.get('/drinks'))
+    const data = await Api.get('/drinks');
+    setDrinks(data.drinks);
   }
 
   useEffect(() => {
     fetchData()
   }, [])
 
+
+
   return (
     <Container>
       <Header />
-      <Searcher />
+      <Searcher value={value} onChangeText={(text) => setValue(text)} />
       <CardList>
-        {[1, 2, 3, 4, 5, 6].map(item => (
-          <Card key={item} navigation={navigation} />
+        {drinksFiltered && drinksFiltered.map(item => (
+          <Card key={item.id} data={item} navigation={navigation} />
         ))}
       </CardList>
     </Container >

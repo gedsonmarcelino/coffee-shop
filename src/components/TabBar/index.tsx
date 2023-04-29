@@ -3,24 +3,24 @@ import React from 'react';
 import { TabBarButton, TabBarContainer, TabBarIcon } from './styles';
 
 const Icons = {
-  home: {
+  list: {
     imgName: 'Home',
-    uri: require('../../assets/images/icon-home.png')
+    uri: require('../../assets/icons/icon-home.png')
   },
   cart: {
     imgName: 'Cart',
-    uri: require('../../assets/images/icon-cart.png')
+    uri: require('../../assets/icons/icon-cart.png')
   }
 }
 
 const IconsActive = {
-  home: {
+  list: {
     imgName: 'Home',
-    uri: require('../../assets/images/icon-home-active.png')
+    uri: require('../../assets/icons/icon-home-active.png')
   },
   cart: {
     imgName: 'Cart',
-    uri: require('../../assets/images/icon-cart-active.png')
+    uri: require('../../assets/icons/icon-cart-active.png')
   }
 }
 
