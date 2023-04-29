@@ -8,6 +8,8 @@ export const CardContainer = styled.View`
   justify-content: center;
 `;
 
+export const CardImageButton = styled.TouchableOpacity``;
+
 export const CardImage = styled.Image`
   flex: 1;
   width: 100%;
