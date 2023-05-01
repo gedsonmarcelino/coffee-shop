@@ -12,7 +12,7 @@ export function ViewScreen({ navigation, route }) {
         <ViewBackButton onPress={() => navigation.goBack()} >
           <ViewImageBack source={Icon['icon-back'].uri} />
         </ViewBackButton>
-        <ViewImage source={Image['image-1-large'].uri} />
+        <ViewImage source={Image[data.image].uri} />
       </ViewImageContainer>
 
       <ViewTitle>{data.title}</ViewTitle>
