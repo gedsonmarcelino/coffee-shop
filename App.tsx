@@ -6,8 +6,8 @@ import colors from './src/themes/colors';
 import fonts from './src/themes/fonts';
 
 import { useFonts } from 'expo-font';
-import { BottomTabNavigation } from "./src/routes/BottomTabNavigation";
 import { StackNavigation } from './src/routes/StackNavigation';
+import { StatusBar } from 'react-native';
 
 
 const myTheme: DefaultTheme = {
@@ -30,6 +30,7 @@ export default function App() {
   return (
     <ThemeProvider theme={myTheme}>
       <StackNavigation />
+      <StatusBar />
     </ThemeProvider >
 
   );

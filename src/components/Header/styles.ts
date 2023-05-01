@@ -5,7 +5,7 @@ export const HeaderContainer = styled.View`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 32px 16px 12px 16px;
+  padding: 16px;
 `;
 
 export const HeaderText = styled.View`
@@ -20,6 +20,8 @@ export const HeaderText1 = styled.Text`
 
 export const HeaderText2 = styled.Text`
   margin-top: -20px;
+  margin-bottom: -20px;
+
   margin-left: 5px;
   font-family: ${(props) => props.theme.fonts.regular};
   font-size: 48px;

@@ -23,8 +23,6 @@ export function ListScreen({ navigation }) {
     fetchData()
   }, [])
 
-
-
   return (
     <Container>
       <Header />
