@@ -3,14 +3,14 @@ import { CardContainer, CardImage, CardImageButton, CardPrice, CardPriceButton, 
 import Image from '../Image'
 import Icon from '../Icon'
 
-export function Card({ navigation, data }) {
+export const Card = ({ navigation, data }) => {
   return (<CardContainer>
-    <CardImageButton onPress={() => navigation.navigate('View', { ...data })}>
+    <CardImageButton onPress={() => navigation.navigate('View', { ...data })} >
       <CardImage source={Image[data.image].uri} />
     </CardImageButton>
     <CardTitle >{data.title}</CardTitle>
     <CardPrice>
-      <CardPriceText>{data.price}</CardPriceText>
+      <CardPriceText>$ {data.price}</CardPriceText>
       <CardPriceButton>
         <CardPriceIcon source={Icon['icon-add'].uri} />
       </CardPriceButton>

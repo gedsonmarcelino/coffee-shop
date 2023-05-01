@@ -8,13 +8,17 @@ export const CardContainer = styled.View`
   justify-content: center;
 `;
 
-export const CardImageButton = styled.TouchableOpacity``;
+export const CardImageButton = styled.TouchableOpacity`
+  width: 111px;
+  height: 111px;
+`;
 
 export const CardImage = styled.Image`
   flex: 1;
   width: 100%;
   height: 111px;
   margin-bottom: 8px;
+  border-radius: 16px;
 `;
 
 export const CardTitle = styled.Text`
@@ -46,7 +50,7 @@ export const CardPriceText = styled.Text`
 export const CardPriceButton = styled.TouchableOpacity`
   border-radius: 12px;
   background-color: ${(props) => props.theme.colors.secondary};
-  padding: 15px;
+  padding: 16px;
   position: absolute;
   right: 0;
   top: 0;
