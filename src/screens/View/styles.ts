@@ -1,56 +1,57 @@
 import styled from "styled-components/native";
 
-export const ViewContainer = styled.ScrollView`
+import { Text as GlobalText } from "../../components/styled";
+
+export const Container = styled.ScrollView`
   flex: 1;
   background-color: ${(props) => props.theme.colors.primaryDark};
   padding: 16px;
   z-index: 999;
 `;
 
-export const ViewImageContainer = styled.View`
+export const ImageContainer = styled.View`
   position: relative;
   margin-bottom: 16px;
 `;
-export const ViewImage = styled.Image``;
-export const ViewBackButton = styled.TouchableOpacity`
+export const Image = styled.Image``;
+export const BackButton = styled.TouchableOpacity`
   position: absolute;
   top: 15px;
   left: 10px;
   z-index: 1;
+  height: 42px;
 `;
-export const ViewImageBack = styled.Image`
+export const ImageBack = styled.Image`
   width: 40px;
-  height: 40px;
+  height: 42px;
 `;
 
-export const ViewTitle = styled.Text`
-  font-family: ${(props) => props.theme.fonts.regular};
+export const Title = styled(GlobalText)`
   font-size: 24px;
-  color: ${(props) => props.theme.colors.white};
   margin-bottom: 8px;
 `;
-export const ViewSubTitle = styled(ViewTitle)`
+export const SubTitle = styled(Title)`
   font-size: 16px;
 `;
-export const ViewDescription = styled(ViewSubTitle)`
+export const Description = styled(SubTitle)`
   font-size: 14px;
   margin-bottom: 30px;
 `;
 
-export const ViewFooter = styled.View`
+export const Footer = styled.View`
   flex-direction: row;
 `;
-export const ViewFooterPrice = styled.View`
+export const FooterPrice = styled.View`
   flex-direction: column;
   flex: 1;
 `;
-export const ViewFooterPriceLabel = styled(ViewDescription)`
+export const FooterPriceLabel = styled(Description)`
   margin-bottom: 9px;
 `;
-export const ViewFooterPriceText = styled(ViewTitle)`
+export const FooterPriceText = styled(Title)`
   margin-bottom: 0;
 `;
-export const ViewFooterButton = styled.TouchableOpacity`
+export const FooterButton = styled.TouchableOpacity`
   flex: 3;
   width: 100%;
   background-color: ${(props) => props.theme.colors.secondary};
@@ -58,8 +59,7 @@ export const ViewFooterButton = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
 `;
-export const ViewFooterButtonText = styled.Text`
-  font-family: ${(props) => props.theme.fonts.regular};
+export const FooterButtonText = styled(GlobalText)`
   color: ${(props) => props.theme.colors.primaryDark};
   font-size: 14px;
 `;

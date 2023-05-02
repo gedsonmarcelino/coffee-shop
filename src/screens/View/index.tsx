@@ -1,33 +1,33 @@
-import { ViewBackButton, ViewContainer, ViewDescription, ViewFooter, ViewFooterButton, ViewFooterButtonText, ViewFooterPrice, ViewFooterPriceLabel, ViewFooterPriceText, ViewImage, ViewImageBack, ViewImageContainer, ViewSubTitle, ViewTitle } from './styles';
+import { BackButton, Container, Description, Footer, FooterButton, FooterButtonText, FooterPrice, FooterPriceLabel, FooterPriceText, Image, ImageBack, ImageContainer, SubTitle, Title } from './styles';
 
-import Image from "../../components/Image";
-import Icon from "../../components/Icon";
+import ImageDB from "../../components/Image";
+import IconDB from "../../components/Icon";
 
 export function ViewScreen({ navigation, route }) {
   const data = route.params;
 
   return (
-    <ViewContainer>
-      <ViewImageContainer>
-        <ViewBackButton onPress={() => navigation.goBack()} >
-          <ViewImageBack source={Icon['icon-back'].uri} />
-        </ViewBackButton>
-        <ViewImage source={Image[data.image].uri} />
-      </ViewImageContainer>
+    <Container>
+      <ImageContainer>
+        <BackButton onPress={() => navigation.goBack()} >
+          <ImageBack source={IconDB['icon-back'].uri} />
+        </BackButton>
+        <Image source={ImageDB['image-1-large'].uri} />
+      </ImageContainer>
 
-      <ViewTitle>{data.title}</ViewTitle>
-      <ViewSubTitle>{data.type}</ViewSubTitle>
-      <ViewDescription>{data.description}... Read More.</ViewDescription>
+      <Title>{data.title}</Title>
+      <SubTitle>{data.type}</SubTitle>
+      <Description>{data.description}... Read More.</Description>
 
-      <ViewFooter>
-        <ViewFooterPrice>
-          <ViewFooterPriceLabel>Price</ViewFooterPriceLabel>
-          <ViewFooterPriceText>{data.price}</ViewFooterPriceText>
-        </ViewFooterPrice>
-        <ViewFooterButton onPress={() => console.log('Buy Now')}>
-          <ViewFooterButtonText>BUY NOW</ViewFooterButtonText>
-        </ViewFooterButton>
-      </ViewFooter>
-    </ViewContainer>
+      <Footer>
+        <FooterPrice>
+          <FooterPriceLabel>Price</FooterPriceLabel>
+          <FooterPriceText>$ {data.price}</FooterPriceText>
+        </FooterPrice>
+        <FooterButton onPress={() => console.log('Buy Now')}>
+          <FooterButtonText>BUY NOW</FooterButtonText>
+        </FooterButton>
+      </Footer>
+    </Container>
   )
 }

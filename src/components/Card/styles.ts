@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
+import { Text as GlobalText } from "../styled";
 
-export const CardContainer = styled.View`
+export const Container = styled.View`
   width: 144px;
   background-color: ${(props) => props.theme.colors.primaryLight};
   padding: 12px;
@@ -8,12 +9,12 @@ export const CardContainer = styled.View`
   justify-content: center;
 `;
 
-export const CardImageButton = styled.TouchableOpacity`
+export const ImageButton = styled.TouchableOpacity`
   width: 111px;
   height: 111px;
 `;
 
-export const CardImage = styled.Image`
+export const Image = styled.Image`
   flex: 1;
   width: 100%;
   height: 111px;
@@ -21,14 +22,12 @@ export const CardImage = styled.Image`
   border-radius: 16px;
 `;
 
-export const CardTitle = styled.Text`
-  font-family: ${(props) => props.theme.fonts.regular};
+export const Title = styled(GlobalText)`
   font-size: 14px;
-  color: ${(props) => props.theme.colors.white};
   margin-bottom: 13px;
 `;
 
-export const CardPrice = styled.View`
+export const Price = styled.View`
   flex-direction: row;
   background-color: ${(props) => props.theme.colors.primaryLighter};
   padding: 11px;
@@ -37,17 +36,14 @@ export const CardPrice = styled.View`
   position: relative;
 `;
 
-export const CardPriceText = styled.Text`
-  font-family: ${(props) => props.theme.fonts.regular};
-  font-size: 16px;
-  color: ${(props) => props.theme.colors.white};
+export const PriceText = styled(GlobalText)`
   text-align: center;
   background-color: #3f3f3f;
   width: 100%;
   padding-right: 40px;
 `;
 
-export const CardPriceButton = styled.TouchableOpacity`
+export const PriceButton = styled.TouchableOpacity`
   border-radius: 12px;
   background-color: ${(props) => props.theme.colors.secondary};
   padding: 16px;
@@ -56,4 +52,4 @@ export const CardPriceButton = styled.TouchableOpacity`
   top: 0;
 `;
 
-export const CardPriceIcon = styled.Image``;
+export const PriceIcon = styled.Image``;
