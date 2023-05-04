@@ -1,4 +1,4 @@
-const CSS_TAILWIND = {
+export default {
   
     //  --- Flexbox ---
   
