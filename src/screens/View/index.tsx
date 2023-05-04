@@ -19,7 +19,7 @@ export function ViewScreen({ navigation, route }) {
       <Text styles="text-base mb-2">{data.type}</Text>
       <Text styles="text-sm mb-5">{data.description}... Read More</Text>
 
-      <Row>
+      <Row styles="justify-between">
         <View>
           <Text styles="text-sm">Price</Text>
           <Text styles="text-2xl bold">$ {data.price}</Text>
