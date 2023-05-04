@@ -1,4 +1,4 @@
-import CSS_TAILWIND from './styles'
+import CSS_TAILWIND from "./styles";
 
 const CSS_CUSTOM = {
   "border-0": "border-width: 0px",
@@ -42,6 +42,8 @@ const CSS_CUSTOM = {
   "h-{72}": "height: 72px",
 
   "text-black": "color: #000000",
+  "text-secondary": "color: #EFE3C8",
+  "text-secondary-dark": "color: #88776F",
 
   "bg-primary-light": "background-color: #362C36",
   "bg-primary-dark": "background-color: #171017",
@@ -49,9 +51,9 @@ const CSS_CUSTOM = {
 
   "border-secondary": "border-color: #EFE3C8",
   "border-secondary-dark": "border-color: #88776F",
-}
+};
 
-const CSS = {...CSS_TAILWIND, ...CSS_CUSTOM};
+const CSS = { ...CSS_TAILWIND, ...CSS_CUSTOM };
 
 export function stylish(props: any) {
   const styles = props?.styles?.split(" ").filter((value) => value) || [];
