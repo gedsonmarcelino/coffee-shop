@@ -1,11 +1,10 @@
-import { Container } from '../View/styles';
 import { View, Col, Image, Row, Text, Button } from '../../lib/stylish';
 
 import ImageDB from "../../components/Image";
 
 export function CartScreen() {
   return (
-    <Container>
+    <View styles="bg-primary-dark p-4">
       <Text styles="text-2xl text-center mb-5">Cart</Text>
 
       {[1, 2, 3].map(value => (
@@ -52,6 +51,6 @@ export function CartScreen() {
         <Text styles="text-lg text-black px-3 py-2.5">PAY NOW</Text>
       </Button>
 
-    </Container>
+    </View>
   )
 }

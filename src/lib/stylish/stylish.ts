@@ -61,6 +61,8 @@ const STYLE_NAMES = {
   "mb-5": "margin-bottom: 20px",
 
   "p-3": "padding: 12px",
+  "p-4": "padding: 16px",
+
   "pb-3": "padding-bottom: 8px",
 
   "py-2.5": "padding-top: 10px padding-bottom: 10px",
@@ -68,13 +70,34 @@ const STYLE_NAMES = {
   "px-3": "padding-left: 8px padding-right: 8px",
   "px-4": "padding-left: 16px padding-right: 16px",
 
+  "w-full": "width: 100%",
+
+  static: "position: static",
+  fixed: "position: fixed",
+  absolute: "position: absolute",
+  relative: "position: relative",
+  sticky: "position: sticky",
+
+  "z-0": "z-index: 0",
+  "z-10": "z-index: 10",
+  "z-20": "z-index: 20",
+  "z-30": "z-index: 30",
+  "z-40": "z-index: 40",
+  "z-50": "z-index: 50",
+  "z-auto": "z-index: auto",
+
+  "top-7": "top: 14px",
+  "left-5": "left: 10px",
+
   // ---- Custom ----
   "w-{72}": "width: 72px",
+  "w-{250}": "width: 250px",
   "h-{72}": "height: 72px",
 
   "text-black": "color: #000000",
 
   "bg-primary-light": "background-color: #362C36",
+  "bg-primary-dark": "background-color: #171017",
   "bg-secondary": "background-color: #EFE3C8",
 
   "border-secondary": "border-color: #EFE3C8",
