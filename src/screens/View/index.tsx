@@ -1,7 +1,7 @@
 
 import ImageDB from "../../components/Image";
 import IconDB from "../../components/Icon";
-import { Image, Button, Row, Text, View } from '../../lib/stylish';
+import { Image, Button, Row, Text, View } from 'native-styled-wind';
 
 export function ViewScreen({ navigation, route }) {
   const data = route.params;

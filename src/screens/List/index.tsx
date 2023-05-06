@@ -5,7 +5,6 @@ import { Header } from '../../components/Header';
 import { Searcher } from '../../components/Searcher';
 import { Card } from '../../components/Card';
 import { CardList } from './styles';
-import { Text } from 'react-native';
 
 export function ListScreen({ navigation }) {
 

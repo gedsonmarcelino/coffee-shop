@@ -1,8 +1,7 @@
 import React from "react";
 import ProfileImage from '../../assets/images/profile.png';
 
-import { HeaderContainer, HeaderText, HeaderText1, HeaderText2, ProfilePicture } from "./styles";
-import { Col, Image, Row, Text } from "../../lib/stylish";
+import { Col, Image, Row, Text } from "native-styled-wind";
 
 export function Header() {
   return (

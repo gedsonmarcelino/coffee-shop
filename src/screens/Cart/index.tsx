@@ -1,4 +1,4 @@
-import { View, Col, Image, Row, Text, Button } from '../../lib/stylish';
+import { View, Col, Image, Row, Text, Button } from 'native-styled-wind';
 
 import ImageDB from "../../components/Image";
 
